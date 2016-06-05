@@ -1,0 +1,21 @@
+module myModule
+
+import java.lang.annotation.Annotation ;
+import java.lang.String; 
+
+suite MyTestSuite using (file.xml , another.properties , aFile.data ){
+
+	prepare using (afile.xml , another.properties , aFile.data ){
+		
+		test case myTest using ( thisisMyProp.xml , another.properties , aFile.data ){
+			String String  ;
+			Integer Character;
+			Float Math;
+			
+			java.lang.invoke.AbstractValidatingLambdaMetafactory java.lang.annotation.AnnotationFormatError;
+			Integer javax.swing.text.html.HiddenTagView;
+		}
+	}
+}
+
+
