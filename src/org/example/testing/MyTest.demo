@@ -1,0 +1,34 @@
+package MyModule ;
+
+import actions.Click
+import actions.Fill
+import org.example.MyPage
+import org.example.testing.another.MyOtherPage
+
+suite MyTest using (testFile.xml ){
+	 
+//	on <condition> before page load:  (CloseWindow) ;
+//	On SomeConiditon before
+ 
+	Click MyOtherPage.text ;
+
+  	prepare {
+		
+		
+		Fill MyPage.element : "How to use this" ;
+	
+		String ;
+		
+		test testSearch using (some.xml ) {
+			Click MyPage.element ;
+			Fill MyPage.text : "How to use this" ;
+//			Click MyPage.getValues(3); // error: no viable alternative at input '3'
+		}
+		
+		
+		test anotherTest using (some.xml){
+			Click MyPage.text ;
+		}
+	}
+}
+
